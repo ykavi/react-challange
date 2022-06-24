@@ -1,12 +1,19 @@
-import Head from 'next/head';
-import { Grid, Col, Row } from 'react-styled-flexboxgrid';
-import { PageTitle, FilterTab } from '@components';
+import { Col, Row } from 'react-styled-flexboxgrid';
+import { PageTitle, FilterTab, SelectBox, Text } from '@components';
 
 const Home = () => (
   <>
-    <Col>
-      <PageTitle />
-    </Col>
+    <Row>
+      <Col lg={20}>
+        <PageTitle />
+      </Col>
+
+      <Col lg={4}>
+        <SelectBox>
+          <Text color="grey_v5">Sıralama</Text>
+        </SelectBox>
+      </Col>
+    </Row>
 
     <Col lg={5}>
       <FilterTab />

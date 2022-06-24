@@ -2,8 +2,8 @@ export const TAB_DATA = [
   {
     title: 'Sıralama',
     subTitle: [
-      { title: 'En Düşük Fiyat', key: 'down', active: false },
-      { title: 'En Yüksek Fiyat', key: 'up', active: false },
+      { title: 'En Düşük Fiyat', key: 'low', active: false },
+      { title: 'En Yüksek Fiyat', key: 'high', active: false },
     ],
   },
   {

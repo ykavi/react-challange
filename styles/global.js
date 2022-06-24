@@ -15,6 +15,13 @@ const globalCSS = css`
   p {
     margin: 0;
   }
+
+  ul,
+  li {
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+  }
 `;
 
 export default globalCSS;

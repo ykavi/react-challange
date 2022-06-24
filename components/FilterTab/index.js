@@ -1,18 +1,23 @@
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { Text } from '@components';
 import { TAB_DATA } from '@mock';
 import { Container, ItemWrapper } from './style';
 
 const FilterTab = () => {
-  const [isActive, setActive] = useState();
-  const [tabData, setTabData] = useState(TAB_DATA);
+  const router = useRouter();
+  const { filterKey } = router.query;
 
   const onClickHandle = (key) => {
-    console.log(tabData.find((item) => item.key === key)); // TODO: tıklanan item aktif olacak
+    router.push({
+      pathname: '/',
+      query: {
+        filterKey: key,
+      },
+    });
   };
 
   const getFilterTab = (item) => (
-    <ItemWrapper>
+    <ItemWrapper key={item.title}>
       <ul>
         <Text margin="0 0 24px 0" weight="medium" color="black_v1">
           {item.title}
@@ -24,8 +29,8 @@ const FilterTab = () => {
               hoverColor="brand_color"
               margin="0 72px 6px 0"
               size="small"
-              color={subItem.active ? 'brand_color' : 'black_v2'}
-              onClick={() => onClickHandle(subItem.key)}
+              color={filterKey === subItem.key ? 'brand_color' : 'black_v2'}
+              onClickHandle={() => onClickHandle(subItem.key)}
             >
               {subItem.title}
             </Text>
@@ -35,7 +40,7 @@ const FilterTab = () => {
     </ItemWrapper>
   );
 
-  return <Container>{tabData.map(getFilterTab)}</Container>;
+  return <Container>{TAB_DATA.map(getFilterTab)}</Container>;
 };
 
 export default FilterTab;
