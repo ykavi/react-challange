@@ -3,10 +3,15 @@ import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import { PageTitle, FilterTab } from '@components';
 
 const Home = () => (
-  <Grid>
-    <PageTitle />
-    <FilterTab />
-  </Grid>
+  <>
+    <Col>
+      <PageTitle />
+    </Col>
+
+    <Col lg={5}>
+      <FilterTab />
+    </Col>
+  </>
 );
 
 export default Home;

@@ -15,4 +15,8 @@ export const StyledText = styled.p`
   font-size: ${({ theme, size }) => theme.sizes[size]};
   color: ${({ theme, color }) => theme.colors[color]};
   font-weight: ${({ theme, weight }) => theme.weight[weight]};
+
+  &:hover {
+    color: ${({ theme, hoverColor }) => theme.colors[hoverColor]};
+  }
 `;

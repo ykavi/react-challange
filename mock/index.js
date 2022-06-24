@@ -2,20 +2,20 @@ export const TAB_DATA = [
   {
     title: 'Sıralama',
     subTitle: [
-      { title: 'En Düşük Fiyat', key: 'down' },
-      { title: 'En Yüksek Fiyat', key: 'up' },
+      { title: 'En Düşük Fiyat', key: 'down', active: false },
+      { title: 'En Yüksek Fiyat', key: 'up', active: false },
     ],
   },
   {
     title: 'Marka',
     subTitle: [
-      { title: 'Samsung', key: 'samsung' },
-      { title: 'Nokia', key: 'nokia' },
-      { title: 'Apple', key: 'apple' },
-      { title: 'LG', key: 'lg' },
-      { title: 'Huawei', key: 'huawei' },
-      { title: 'Xiaomi', key: 'xiaomi' },
-      { title: 'General Mobile', key: 'generalMobile' },
+      { title: 'Samsung', key: 'samsung', active: false },
+      { title: 'Nokia', key: 'nokia', active: false },
+      { title: 'Apple', key: 'apple', active: true },
+      { title: 'LG', key: 'lg', active: false },
+      { title: 'Huawei', key: 'huawei', active: false },
+      { title: 'Xiaomi', key: 'xiaomi', active: false },
+      { title: 'General Mobile', key: 'generalMobile', active: false },
     ],
   },
 ];
