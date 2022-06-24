@@ -5,5 +5,7 @@ import ShoppingCart from './ShoppingCart';
 import Text from './Text';
 import NImage from './NImage';
 import Button from './Button';
+import PageTitle from './PageTitle';
+import FilterTab from './FilterTab';
 
-export { Header, Footer, SearchBar, ShoppingCart, Text, NImage, Button };
+export { Header, Footer, SearchBar, ShoppingCart, Text, NImage, Button, PageTitle, FilterTab };

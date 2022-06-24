@@ -9,13 +9,13 @@ export const TAB_DATA = [
   {
     title: 'Marka',
     subTitle: [
-      { title: 'Samsung', key: 'down' },
-      { title: 'Nokia', key: 'up' },
-      { title: 'Apple', key: 'up' },
-      { title: 'LG', key: 'up' },
-      { title: 'Huawei', key: 'up' },
-      { title: 'Xiaomi', key: 'up' },
-      { title: 'General Mobile', key: 'up' },
+      { title: 'Samsung', key: 'samsung' },
+      { title: 'Nokia', key: 'nokia' },
+      { title: 'Apple', key: 'apple' },
+      { title: 'LG', key: 'lg' },
+      { title: 'Huawei', key: 'huawei' },
+      { title: 'Xiaomi', key: 'xiaomi' },
+      { title: 'General Mobile', key: 'generalMobile' },
     ],
   },
 ];
