@@ -1,20 +1,19 @@
-import { useTheme } from 'styled-components';
-import { Container, IconWrapper } from './style';
+import { useState } from 'react';
+import { Container } from './style';
 import Cart from './Cart';
 import ProductCount from './ProductCount';
-import { Basket } from '@Icons';
 import { Text } from '@components';
 
 const ShoppingCart = () => {
-  const theme = useTheme();
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const onClickHandle = () => setIsCartOpen(!isCartOpen);
 
   return (
-    <Container>
+    <Container onClick={onClickHandle} isCartOpen={isCartOpen}>
       <Text color="grey_v5">Sepetim</Text>
       <ProductCount />
-      {/*
-        <Cart /> SEPET İÇİ
-       */}
+      {isCartOpen && <Cart isCartOpen={isCartOpen} />}
     </Container>
   );
 };

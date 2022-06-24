@@ -4,5 +4,6 @@ import SearchBar from './SearchBar';
 import ShoppingCart from './ShoppingCart';
 import Text from './Text';
 import NImage from './NImage';
+import Button from './Button';
 
-export { Header, Footer, SearchBar, ShoppingCart, Text, NImage };
+export { Header, Footer, SearchBar, ShoppingCart, Text, NImage, Button };

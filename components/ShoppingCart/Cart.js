@@ -1,11 +1,11 @@
-import { CartContainer, Content } from './style';
+import { CartContainer, Content, Separator } from './style';
 import Text from '../Text';
 import CartProduct from './CartProduct';
 
-const Cart = () => {
+const Cart = ({ isCartOpen }) => {
   return (
-    <CartContainer>
-      <Text>Sepetim (3 ürün)</Text>
+    <CartContainer onClick={(e) => e.stopPropagation()} isCartOpen={isCartOpen}>
+      <Separator />
 
       <Content>
         <CartProduct />

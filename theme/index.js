@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    brand_color: '#FF6666',
+    brand_color: '#F90000',
     white: '#FFFFFF',
     grey_v1: '#333333',
     grey_v2: '#e8e8e8',
