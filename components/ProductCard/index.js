@@ -10,6 +10,7 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const [isHover, setIsHover] = useState(false);
   const currentBasketProducts = useSelector((store) => store.main.basket);
+  const hasBasketProduct = currentBasketProducts.some((item) => item.id === product.id);
 
   return (
     <Container hasBorder={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
@@ -48,18 +49,18 @@ const ProductCard = ({ product }) => {
 
       {isHover && (
         <>
-          <ButtonWrapper onClick={() => dispatch(setBasket([product, ...currentBasketProducts]))}>
-            <Button backGroundColor="orange_v2" color="orange_v1">
-              Sepete Ekle
-            </Button>
-          </ButtonWrapper>
-
-          {false && (
+          {hasBasketProduct ? (
             <ButtonWrapper>
               <Button backGroundColor="grey_v2">
                 <Text size="small" color="grey_v5">
                   Bu Ürün Sepete Eklenemez.
                 </Text>
+              </Button>
+            </ButtonWrapper>
+          ) : (
+            <ButtonWrapper onClick={() => dispatch(setBasket([product, ...currentBasketProducts]))}>
+              <Button backGroundColor="orange_v2" color="orange_v1">
+                Sepete Ekle
               </Button>
             </ButtonWrapper>
           )}
