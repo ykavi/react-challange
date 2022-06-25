@@ -3,9 +3,13 @@ import { Container, BrandInfo, PriceContainer, DiscountContainer, ButtonWrapper 
 import { NImage, Button } from '@components';
 import { formatPrice, formatDiscount } from '@helpers';
 import Text from '../Text';
+import { useSelector, useDispatch } from 'react-redux';
+import { setBasket } from '../../redux/actions/main';
 
 const ProductCard = ({ product }) => {
+  const dispatch = useDispatch();
   const [isHover, setIsHover] = useState(false);
+  const currentBasketProducts = useSelector((store) => store.main.basket);
 
   return (
     <Container hasBorder={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
@@ -44,7 +48,7 @@ const ProductCard = ({ product }) => {
 
       {isHover && (
         <>
-          <ButtonWrapper>
+          <ButtonWrapper onClick={() => dispatch(setBasket([product, ...currentBasketProducts]))}>
             <Button backGroundColor="orange_v2" color="orange_v1">
               Sepete Ekle
             </Button>

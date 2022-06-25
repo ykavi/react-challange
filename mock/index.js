@@ -60,7 +60,7 @@ export const PRODUCT_LIST = [
     price: { buyPrice: 1590.85, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
 ];
-export const TEST = [
+export const BASKET_PRODUCTS = [
   {
     id: 22350,
     title: 'Samsung Galaxy A53 5G 128GB Siyah',

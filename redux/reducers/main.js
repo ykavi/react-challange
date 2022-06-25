@@ -1,9 +1,10 @@
 import * as t from '../types';
-import { PRODUCT_LIST } from '@mock';
+import { PRODUCT_LIST, BASKET_PRODUCTS } from '@mock';
 
 const main = (
   state = {
     products: PRODUCT_LIST,
+    basket: BASKET_PRODUCTS,
   },
   action,
 ) => {
@@ -12,6 +13,11 @@ const main = (
       return {
         ...state,
         products: action.payload,
+      };
+    case t.SET_BASKET:
+      return {
+        ...state,
+        basket: action.payload,
       };
     default:
       return { ...state };

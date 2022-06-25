@@ -6,3 +6,10 @@ export const setProducts = (data) => (dispatch) => {
     payload: data,
   });
 };
+
+export const setBasket = (data) => (dispatch) => {
+  dispatch({
+    type: t.SET_BASKET,
+    payload: data,
+  });
+};

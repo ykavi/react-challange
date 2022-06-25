@@ -1,8 +1,8 @@
 import { Container, StyledButton } from './style';
 
-const Button = ({ children, backGroundColor, color, hasBorder, margin }) => {
+const Button = ({ children, backGroundColor, color, hasBorder, margin, onClickHandle }) => {
   return (
-    <Container margin={margin} backGroundColor={backGroundColor} color={color} hasBorder={hasBorder}>
+    <Container onClick={onClickHandle} margin={margin} backGroundColor={backGroundColor} color={color} hasBorder={hasBorder}>
       <StyledButton>{children}</StyledButton>
     </Container>
   );
