@@ -12,7 +12,7 @@ const CartProduct = () => {
     <Wrapper onClick={onClickHandle}>
       <Row>
         <Col lg={7}>
-          <NImage src="https://cdn.dsmcdn.com/ty119/product/media/images/20210524/14/91056373/57025599/1/1_org_zoom.jpg" alt="alt" />
+          <NImage src="https://cdn.dsmcdn.com/ty119/product/media/images/20210524/14/91056373/57025599/1/1_org_zoom.jpg" alt="alt" hasBorder />
         </Col>
         <Col lg={17}>
           <ItemInfo>
@@ -20,7 +20,7 @@ const CartProduct = () => {
               Spiderman Yeni Örümcek Adam 2 Maskeli Kostüm v733v
             </Text>
             <Col lg={10}>
-              <Button>
+              <Button margin="0 6px" hasBorder color="brand_color">
                 <Text size="xsmall">Kaldır</Text>
               </Button>
             </Col>

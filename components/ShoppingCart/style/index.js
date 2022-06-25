@@ -11,7 +11,7 @@ export const Container = styled.div`
   border-radius: ${({ theme }) => theme.radius.normal};
   width: 7.4rem;
   float: right;
-  z-index: 1;
+  z-index: 2;
 
   ${({ isCartOpen }) =>
     isCartOpen &&

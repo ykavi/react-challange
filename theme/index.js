@@ -8,8 +8,11 @@ const theme = {
     grey_v4: '#999999',
     grey_v5: '#B0B0B0',
     grey_v6: '#E5E5E5',
+    grey_v7: '#9B9B9B',
     black_v1: '#484848',
     black_v2: '#646464',
+    orange_v1: '#FF6000',
+    orange_v2: '#FFEAE5',
   },
   flexboxgrid: {
     gridSize: 24, // columns
