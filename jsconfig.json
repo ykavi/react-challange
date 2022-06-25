@@ -6,7 +6,9 @@
       "@Icons": ["./components/Icons"],
       "@layout": ["./layout"],
       "@theme": ["./theme"],
-      "@mock": ["./mock"]
+      "@mock": ["./mock"],
+      "@helpers": ["./utils/helpers"],
+      "@enums": ["./enums"]
     }
   }
 }

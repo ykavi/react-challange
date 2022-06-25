@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import theme from '@theme';
 import { MainLayout } from '@layout';
+import { wrapper } from '../redux/store';
 
 const MyApp = ({ Component, pageProps }) => (
   <>
@@ -19,4 +20,4 @@ const MyApp = ({ Component, pageProps }) => (
   </>
 );
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

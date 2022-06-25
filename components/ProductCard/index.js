@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { Container, BrandInfo, PriceContainer, DiscountContainer, ButtonWrapper } from './style';
 import { NImage, Button } from '@components';
+import { formatPrice, formatDiscount } from '@helpers';
 import Text from '../Text';
 
-const ProductCard = () => {
+const ProductCard = ({ product }) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
     <Container hasBorder={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <NImage src="https://cdn.dsmcdn.com/ty119/product/media/images/20210524/14/91056373/57025599/1/1_org_zoom.jpg" alt="alt" hasBorder={!isHover} />
       <Text margin="10px" size="small" color="black_v1" ellipsis={2}>
-        Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line) asd asdsa
+        {product?.title}
       </Text>
 
       {!isHover && (
@@ -20,21 +21,21 @@ const ProductCard = () => {
               Marka:
             </Text>
             <Text margin="0 0 0 6px" size="small" color="black_v1">
-              Apple
+              {product?.brand}
             </Text>
           </BrandInfo>
 
           <PriceContainer>
             <Text margin="0 0 0 10px" weight="bold" size="small" color="black_v1" ellipsis={2}>
-              90,85 TL
+              {formatPrice(product?.price?.buyPrice)}
             </Text>
 
             <DiscountContainer>
               <Text margin="0 0 0 10px" size="xsmall" color="grey_v7" strikeout>
-                124,00 TL
+                {formatPrice(product?.price?.marketPrice)}
               </Text>
               <Text margin="0 0 0 4px" size="xsmall" color="brand_color" weight="bold">
-                12%
+                {formatDiscount(product?.price?.discount)}
               </Text>
             </DiscountContainer>
           </PriceContainer>

@@ -7,6 +7,7 @@ export const Container = styled.div`
   line-height: 1.4;
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.white};
+  height: 100%;
 
   ${({ hasBorder }) =>
     hasBorder &&
