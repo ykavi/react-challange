@@ -1,5 +1,11 @@
 import { DISCOUNT_TYPE } from '@enums';
 
+export const sortByPrice = (a, b) => {
+  if (a.price < b.price) return -1;
+  if (a.price > b.price) return 1;
+  return 0;
+};
+
 export const formatPrice = (value) => {
   const price = new Intl.NumberFormat('tr-TR', {
     currency: 'TRY',
