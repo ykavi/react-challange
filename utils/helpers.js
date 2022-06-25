@@ -1,8 +1,8 @@
-import { DISCOUNT_TYPE } from '@enums';
+import { DISCOUNT_TYPE } from '../enums';
 
 export const sortByPrice = (a, b) => {
-  if (a.price < b.price) return -1;
-  if (a.price > b.price) return 1;
+  if (a.price.buyPrice < b.price.buyPrice) return -1;
+  if (a.price.buyPrice > b.price.buyPrice) return 1;
   return 0;
 };
 
