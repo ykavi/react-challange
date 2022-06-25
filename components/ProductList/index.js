@@ -10,7 +10,7 @@ const ProductList = () => {
     <Container>
       <Row>
         {products?.map((product) => (
-          <Col key={product?.id} lg={6} md={6} sm={6} xs={12}>
+          <Col className="list-wrapper" key={product?.id} lg={6} md={6} sm={6} xs={12}>
             <ProductCard product={product} />
           </Col>
         ))}
