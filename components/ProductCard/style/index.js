@@ -14,6 +14,10 @@ export const Container = styled.div`
       border: 1px solid ${({ theme }) => theme.colors.grey_v2};
       border-radius: ${({ theme }) => theme.radius.normal};
     `};
+
+  @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
+    margin-bottom: ${({ theme }) => theme.sizes.xxlarge};
+  }
 `;
 
 export const BrandInfo = styled.div`

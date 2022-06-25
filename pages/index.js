@@ -16,11 +16,11 @@ const Home = () => (
     </Row>
 
     <Row>
-      <Col lg={4} md={4} sm={4} xs={4}>
+      <Col lg={4} md={4} sm={4} xs={0}>
         <FilterTab />
       </Col>
 
-      <Col lg={20} md={20} sm={20} xs={20}>
+      <Col lg={20} md={20} sm={20} xs={23}>
         <ProductList />
         <Pagination />
       </Col>

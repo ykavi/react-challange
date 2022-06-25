@@ -5,7 +5,7 @@ const Footer = () => (
   <StyledFooter>
     <Row>
       <Col lg={6}>
-        <p>Footer</p>
+        <p></p>
       </Col>
     </Row>
   </StyledFooter>

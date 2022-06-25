@@ -6,4 +6,7 @@ export const Container = styled.div`
 
 export const ItemWrapper = styled.div`
   margin: ${({ theme }) => theme.sizes.xxxlarge} 0;
+  @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
+    display: none;
+  }
 `;
