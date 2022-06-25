@@ -19,6 +19,11 @@ export const Container = styled.div`
       border-bottom-color: ${({ theme }) => theme.colors.white};
       border-bottom-right-radius: initial;
       border-bottom-left-radius: initial;
+
+      @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
+        border-bottom-color: ${({ theme }) => theme.colors.grey_v6};
+        border-radius: ${({ theme }) => theme.radius.normal};
+      }
     `}
 
   @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
@@ -40,6 +45,10 @@ export const Separator = styled.span`
   top: -2px;
   height: 2px;
   background: ${({ theme }) => theme.colors.white};
+
+  @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
+    display: none;
+  }
 `;
 
 export const CartContainer = styled.div`
@@ -58,6 +67,13 @@ export const CartContainer = styled.div`
       border-top-left-radius: initial;
       border-top-right-radius: initial;
     `};
+
+  @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
+    width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm};
+    right: 0;
+    left: -196%;
+    top: 28px;
+  }
 `;
 
 export const Content = styled.div`

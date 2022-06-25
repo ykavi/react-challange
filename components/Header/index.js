@@ -8,7 +8,7 @@ const Header = () => (
   <StyledHeader>
     <Grid>
       <Row>
-        <Col lg={5} md={4} sm={4} xs={8}>
+        <Col lg={5} md={4} sm={4} xs={24}>
           <Link href="/">
             <LogoWrapper>
               <Logo width="100%" />

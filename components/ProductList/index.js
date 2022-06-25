@@ -11,4 +11,5 @@ const ProductList = () => {
     </Container>
   );
 };
+
 export default ProductList;

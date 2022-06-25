@@ -43,7 +43,9 @@ export const IconWrapper = styled.div`
   left: 5.8rem;
 
   @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.sm}em) {
-    position: absolute;
-    right: ${({ theme }) => theme.sizes.large};
+    left: 1.5rem !important;
+  }
+  @media (max-width: ${({ theme }) => theme.flexboxgrid.breakpoints.md}em) {
+    left: 3.2rem;
   }
 `;
