@@ -27,7 +27,7 @@ const FilterTab = () => {
           <li key={subItem.title}>
             <Text
               hoverColor="brand_color"
-              margin="0 72px 6px 0"
+              margin="0 52px 6px 0"
               size="small"
               color={filterKey === subItem.key ? 'brand_color' : 'black_v2'}
               onClickHandle={() => onClickHandle(subItem.key)}
