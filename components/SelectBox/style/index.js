@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const ItemList = styled.div`
   background: ${({ theme }) => theme.colors.black_v1};
   position: absolute;
-  bottom: -65px;
+  bottom: -60px;
   width: 100%;
   color: ${({ theme }) => theme.colors.white};
   font-size: 12px;
@@ -30,6 +30,7 @@ export const ItemList = styled.div`
     }
 
     li {
+      display: flex;
       padding: ${({ theme }) => theme.sizes.xxsmall} 0 ${({ theme }) => theme.sizes.xxsmall} ${({ theme }) => theme.sizes.xxsmall};
       &:hover {
         background: ${({ theme }) => theme.colors.black_v2};

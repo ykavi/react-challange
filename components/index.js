@@ -10,5 +10,6 @@ import FilterTab from './FilterTab';
 import SelectBox from './SelectBox';
 import ProductCard from './ProductCard';
 import ProductList from './ProductList';
+import Pagination from './Pagination';
 
-export { Header, Footer, SearchBar, ShoppingCart, Text, NImage, Button, PageTitle, FilterTab, SelectBox, ProductCard, ProductList };
+export { Header, Footer, SearchBar, ShoppingCart, Text, NImage, Button, PageTitle, FilterTab, SelectBox, ProductCard, ProductList, Pagination };

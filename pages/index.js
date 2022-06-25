@@ -1,5 +1,5 @@
 import { Col, Row } from 'react-styled-flexboxgrid';
-import { PageTitle, FilterTab, SelectBox, Text, ProductList } from '@components';
+import { PageTitle, FilterTab, SelectBox, Text, ProductList, Pagination } from '@components';
 
 const Home = () => (
   <>
@@ -22,6 +22,7 @@ const Home = () => (
 
       <Col lg={20}>
         <ProductList />
+        <Pagination />
       </Col>
     </Row>
   </>
