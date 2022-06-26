@@ -8,7 +8,8 @@
       "@theme": ["./theme"],
       "@mock": ["./mock"],
       "@helpers": ["./utils/helpers"],
-      "@enums": ["./enums"]
+      "@enums": ["./enums"],
+      "@hooks": ["./hooks"]
     }
   }
 }

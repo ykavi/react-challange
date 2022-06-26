@@ -34,3 +34,19 @@ export const formatDiscount = (discount) => {
 
   return null;
 };
+
+export const setLocalStorage = (key, data) => {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(data));
+  } catch (error) {
+    console.error(`logFor=function-err function=setLocalStorage error=${error}`);
+  }
+};
+
+export const getLocalStorage = (key) => {
+  try {
+    JSON.parse(window.localStorage.getItem(key));
+  } catch (error) {
+    console.error(`logFor=function-err function=getLocalStorage error=${error}`);
+  }
+};

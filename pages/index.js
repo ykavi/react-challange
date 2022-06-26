@@ -4,13 +4,19 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setProducts } from '../redux/actions/main';
-import { PRODUCT_LIST } from '@mock';
-import { EXCLUDE_FILTER_KEYS } from '@enums';
+import { PRODUCT_LIST, BASKET_PRODUCTS } from '@mock';
+import { EXCLUDE_FILTER_KEYS, LOCAL_STORAGE_KEYS } from '@enums';
+import { setLocalStorage } from '@helpers';
 
 const Home = () => {
   const dispatch = useDispatch();
   const router = useRouter();
   const { filterKey } = router.query;
+
+  useEffect(() => {
+    setLocalStorage(LOCAL_STORAGE_KEYS.PRODUCTS, PRODUCT_LIST);
+    setLocalStorage(LOCAL_STORAGE_KEYS.BASKETS, BASKET_PRODUCTS);
+  }, []);
 
   useEffect(() => {
     if (!filterKey) return;
