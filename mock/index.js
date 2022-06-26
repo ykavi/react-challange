@@ -104,3 +104,140 @@ export const BASKET_PRODUCTS = [
     price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
 ];
+
+export const TEST_DATA_PAGINATE = [
+  [
+    {
+      brand: 'APPLE',
+      id: 12349,
+      price: {
+        buyPrice: 2,
+        discount: {
+          amount: 12,
+          type: 'PERCENT',
+        },
+        marketPrice: 124,
+      },
+      title: 'Apple iPhone 13 Clear Case With Magsafe MM2X3ZM',
+    },
+    {
+      brand: 'APPLE',
+      id: 12350,
+      price: {
+        buyPrice: 1,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Apple iPhone SE 64 GB White',
+    },
+    {
+      brand: 'SAMSUNG',
+      id: 222349,
+      price: {
+        buyPrice: 3,
+        discount: {
+          amount: 42,
+          type: 'PERCENT',
+        },
+        marketPrice: 22,
+      },
+      title: 'Samsung Galaxy A53 5G 128 GB (Samsung Türkiye Garantili)',
+    },
+    {
+      brand: 'SAMSUNG',
+      id: 2223510,
+      price: {
+        buyPrice: 1190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Samsung Galaxy A53 5G 128GB Siyah',
+    },
+    {
+      brand: 'HUAWEI',
+      id: 221349,
+      price: {
+        buyPrice: 1499,
+        discount: {
+          amount: 42,
+          type: 'PERCENT',
+        },
+        marketPrice: 22,
+      },
+      title: 'Huawei Mate 10 Lite 64GB 4GB RAM 1 YIL Garantii ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
+    },
+    {
+      brand: 'HUAWEI',
+      id: 221350,
+      price: {
+        buyPrice: 1590.85,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Huawei P Smart 32GB 3GB RAM 1 YIL Garantili ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
+    },
+    {
+      brand: 'NOKIA',
+      id: 32314,
+      price: {
+        buyPrice: 11190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'NOKİA C6-01 CLASSİK SİYAH DOKUNMATİK CEP TELEFONU(TEŞHİR) ORJİNAL ÜRÜN ŞOK FİYAT ÜCRETSİZ KARGO',
+    },
+    {
+      brand: 'LG',
+      id: 44314,
+      price: {
+        buyPrice: 21190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Lg K10 LTE 16GB Siyah 2GB Ram Cep Telefonu Sorunsuz İkinci El',
+    },
+  ],
+  [
+    {
+      brand: 'XIAOMI',
+      id: 443214,
+      price: {
+        buyPrice: 6190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Xiaomi Redmi Note 8 Pro Kılıf 360 Ön Silikon Arka Sert Mika Şeffaf Tam Koruma Kılıf',
+    },
+    {
+      brand: 'GENERAL MOBILE',
+      id: 943124,
+      price: {
+        buyPrice: 6190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Genaral mobile gm 4 ekran sağlan anakart bozuk',
+    },
+  ],
+];
