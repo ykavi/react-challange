@@ -9,7 +9,7 @@ const useGetLocalStorage = () => {
   useEffect(() => {
     const productsData = getLocalStorage(LOCAL_STORAGE_KEYS.PRODUCTS);
     const basketsData = getLocalStorage(LOCAL_STORAGE_KEYS.BASKETS);
-    console.log('ssss', productsData);
+    console.log('productsData', productsData);
     setProducts(productsData);
     setBaskets(basketsData);
   }, []);
