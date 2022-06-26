@@ -13,3 +13,10 @@ export const setBasket = (data) => (dispatch) => {
     payload: data,
   });
 };
+
+export const setSearchKey = (data) => (dispatch) => {
+  dispatch({
+    type: t.SET_SEARCH_KEY,
+    payload: data,
+  });
+};

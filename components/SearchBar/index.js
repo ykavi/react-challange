@@ -2,7 +2,7 @@ import { StyledInput, Container, IconWrapper } from './style';
 import { Search } from '@Icons';
 import { PRODUCT_LIST } from '@mock';
 import { useDispatch } from 'react-redux';
-import { setProducts } from '../../redux/actions/main';
+import { setProducts, setSearchKey } from '../../redux/actions/main';
 import { useEffect, useState } from 'react';
 
 const SearchBar = () => {
@@ -24,6 +24,7 @@ const SearchBar = () => {
   const onChangeHandle = (e) => {
     const { value } = e.target;
     setInputValue(value);
+    dispatch(setSearchKey(value));
   };
 
   return (

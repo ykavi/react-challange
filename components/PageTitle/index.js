@@ -1,7 +1,10 @@
-import { SelectBox, Text } from '@components';
+import { Text } from '@components';
 import { SearchKeyWrapper, Container } from './style';
+import { useSelector } from 'react-redux';
 
 const PageTitle = () => {
+  const searchKey = useSelector((store) => store.main.searchKey);
+
   return (
     <Container>
       <div>
@@ -14,7 +17,7 @@ const PageTitle = () => {
             Aranan Kelime:
           </Text>
           <Text margin="0 0 0 6px" size="medium">
-            iphone 11
+            {searchKey}
           </Text>
         </SearchKeyWrapper>
       </div>
