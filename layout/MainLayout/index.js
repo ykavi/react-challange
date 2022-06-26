@@ -1,4 +1,4 @@
-import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+import { Grid } from 'react-styled-flexboxgrid';
 import { Header, Footer } from '@components';
 import { Main } from './style';
 

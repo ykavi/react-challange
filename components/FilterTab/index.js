@@ -24,6 +24,7 @@ const FilterTab = () => {
       const filteredData = PRODUCT_LIST.filter((item) => item.brand.toLowerCase() === key.toLowerCase());
       dispatch(setProducts(filteredData));
     }
+
     if (type === TAB_TYPE.SORT) {
       let sortedData;
       if (key == 'high') sortedData = PRODUCT_LIST.sort(sortByPrice).reverse();
