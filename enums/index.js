@@ -13,4 +13,4 @@ export const LOCAL_STORAGE_KEYS = {
   BASKETS: 'BASKETS',
 };
 
-export const EXCLUDE_FILTER_KEYS = ['low', 'high'];
+export const FILTER_KEYS = ['low', 'high'];

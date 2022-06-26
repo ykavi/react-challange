@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setProducts } from '../redux/actions/main';
 import { PRODUCT_LIST, BASKET_PRODUCTS } from '@mock';
-import { EXCLUDE_FILTER_KEYS, LOCAL_STORAGE_KEYS } from '@enums';
+import { FILTER_KEYS, LOCAL_STORAGE_KEYS } from '@enums';
 import { setLocalStorage } from '@helpers';
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!filterKey) return;
-    if (EXCLUDE_FILTER_KEYS.includes(filterKey)) return;
+    if (FILTER_KEYS.includes(filterKey)) return;
 
     const filteredData = PRODUCT_LIST.filter((item) => item.brand?.toLowerCase() === filterKey?.toLowerCase());
     dispatch(setProducts(filteredData));
@@ -34,9 +34,7 @@ const Home = () => {
         </Col>
 
         <Col lg={4} md={4} sm={4} xs={4}>
-          <SelectBox>
-            <Text color="grey_v5">Sıralama</Text>
-          </SelectBox>
+          <SelectBox />
         </Col>
       </Row>
 

@@ -50,3 +50,10 @@ export const getLocalStorage = (key) => {
     console.error(`logFor=function-err function=getLocalStorage error=${error}`);
   }
 };
+
+export const getSelectBoxText = (isLowSort, isHighSort) => {
+  if (isHighSort) return `Azalan`;
+  if (isLowSort) return `Artan`;
+
+  return `Sıralama`;
+};

@@ -27,8 +27,8 @@ const FilterTab = () => {
 
     if (type === TAB_TYPE.SORT) {
       let sortedData;
-      if (key == 'high') sortedData = PRODUCT_LIST.sort(sortByPrice).reverse();
-      if (key == 'low') sortedData = PRODUCT_LIST.sort(sortByPrice);
+      if (key === 'high') sortedData = PRODUCT_LIST.sort(sortByPrice).reverse();
+      if (key === 'low') sortedData = PRODUCT_LIST.sort(sortByPrice);
       dispatch(setProducts(sortedData));
     }
   };

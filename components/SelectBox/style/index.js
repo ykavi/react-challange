@@ -38,3 +38,7 @@ export const ItemList = styled.div`
     }
   }
 `;
+
+export const IconWrapper = styled.span`
+  width: ${({ theme }) => theme.sizes.xmedium};
+`;
