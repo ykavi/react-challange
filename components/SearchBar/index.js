@@ -11,7 +11,6 @@ const SearchBar = () => {
   const [filteredProducts, setFilteredProducts] = useState();
 
   useEffect(() => {
-    console.log(PRODUCT_LIST);
     const filteredItems = PRODUCT_LIST.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase()));
     setFilteredProducts(filteredItems);
   }, [inputValue]);

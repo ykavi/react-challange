@@ -16,7 +16,7 @@ export const TAB_DATA = [
       { title: 'LG', key: 'lg', active: false },
       { title: 'Huawei', key: 'huawei', active: false },
       { title: 'Xiaomi', key: 'xiaomi', active: false },
-      { title: 'General Mobile', key: 'generalMobile', active: false },
+      { title: 'General Mobile', key: 'general Mobile', active: false },
     ],
     type: 'FILTER',
   },
@@ -58,6 +58,30 @@ export const PRODUCT_LIST = [
     title: 'Huawei P Smart 32GB 3GB RAM 1 YIL Garantili ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
     brand: 'HUAWEI',
     price: { buyPrice: 1590.85, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+  },
+  {
+    id: 32314,
+    title: 'NOKİA C6-01 CLASSİK SİYAH DOKUNMATİK CEP TELEFONU(TEŞHİR) ORJİNAL ÜRÜN ŞOK FİYAT ÜCRETSİZ KARGO',
+    brand: 'NOKIA',
+    price: { buyPrice: 11190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+  },
+  {
+    id: 44314,
+    title: 'Lg K10 LTE 16GB Siyah 2GB Ram Cep Telefonu Sorunsuz İkinci El',
+    brand: 'LG',
+    price: { buyPrice: 21190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+  },
+  {
+    id: 44314,
+    title: 'Xiaomi Redmi Note 8 Pro Kılıf 360 Ön Silikon Arka Sert Mika Şeffaf Tam Koruma Kılıf',
+    brand: 'XIAOMI',
+    price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+  },
+  {
+    id: 94314,
+    title: 'Genaral mobile gm 4 ekran sağlan anakart bozuk',
+    brand: 'GENERAL MOBILE',
+    price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
 ];
 export const BASKET_PRODUCTS = [
