@@ -123,20 +123,8 @@ export const TEST_DATA_PAGINATE = [
   [
     {
       brand: 'APPLE',
-      id: 12349,
-      price: {
-        buyPrice: 2,
-        discount: {
-          amount: 12,
-          type: 'PERCENT',
-        },
-        marketPrice: 124,
-      },
-      title: 'Apple iPhone 13 Clear Case With Magsafe MM2X3ZM',
-    },
-    {
-      brand: 'APPLE',
       id: 12350,
+      imageUrl: 'https://productimages.hepsiburada.net/s/49/222-222/10995125452850.jpg/format:webp',
       price: {
         buyPrice: 1,
         discount: {
@@ -148,8 +136,23 @@ export const TEST_DATA_PAGINATE = [
       title: 'Apple iPhone SE 64 GB White',
     },
     {
+      brand: 'APPLE',
+      id: 12349,
+      imageUrl: 'https://productimages.hepsiburada.net/s/49/222-222/10978352234546.jpg',
+      price: {
+        buyPrice: 2,
+        discount: {
+          amount: 12,
+          type: 'PERCENT',
+        },
+        marketPrice: 124,
+      },
+      title: 'Apple iPhone 13 Clear Case With Magsafe MM2X3ZM',
+    },
+    {
       brand: 'SAMSUNG',
       id: 222349,
+      imageUrl: 'https://productimages.hepsiburada.net/s/188/222-222/110000153952354.jpg/format:webp',
       price: {
         buyPrice: 3,
         discount: {
@@ -163,6 +166,7 @@ export const TEST_DATA_PAGINATE = [
     {
       brand: 'SAMSUNG',
       id: 2223510,
+      imageUrl: 'https://productimages.hepsiburada.net/s/54/222-222/11185808965682.jpg/format:webp',
       price: {
         buyPrice: 1190,
         discount: {
@@ -176,6 +180,7 @@ export const TEST_DATA_PAGINATE = [
     {
       brand: 'HUAWEI',
       id: 221349,
+      imageUrl: 'https://productimages.hepsiburada.net/s/192/222-222/110000159082162.jpg/format:webp',
       price: {
         buyPrice: 1499,
         discount: {
@@ -189,6 +194,7 @@ export const TEST_DATA_PAGINATE = [
     {
       brand: 'HUAWEI',
       id: 221350,
+      imageUrl: 'https://productimages.hepsiburada.net/s/192/222-222/110000159092262.jpg/format:webp',
       price: {
         buyPrice: 1590.85,
         discount: {
@@ -200,36 +206,9 @@ export const TEST_DATA_PAGINATE = [
       title: 'Huawei P Smart 32GB 3GB RAM 1 YIL Garantili ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
     },
     {
-      brand: 'NOKIA',
-      id: 32314,
-      price: {
-        buyPrice: 11190,
-        discount: {
-          amount: 52,
-          type: 'PRICE',
-        },
-        marketPrice: 24,
-      },
-      title: 'NOKİA C6-01 CLASSİK SİYAH DOKUNMATİK CEP TELEFONU(TEŞHİR) ORJİNAL ÜRÜN ŞOK FİYAT ÜCRETSİZ KARGO',
-    },
-    {
-      brand: 'LG',
-      id: 44314,
-      price: {
-        buyPrice: 21190,
-        discount: {
-          amount: 52,
-          type: 'PRICE',
-        },
-        marketPrice: 24,
-      },
-      title: 'Lg K10 LTE 16GB Siyah 2GB Ram Cep Telefonu Sorunsuz İkinci El',
-    },
-  ],
-  [
-    {
       brand: 'XIAOMI',
       id: 443214,
+      imageUrl: 'https://productimages.hepsiburada.net/s/198/222-222/110000168627989.jpg/format:webp',
       price: {
         buyPrice: 6190,
         discount: {
@@ -243,6 +222,7 @@ export const TEST_DATA_PAGINATE = [
     {
       brand: 'GENERAL MOBILE',
       id: 943124,
+      imageUrl: 'https://productimages.hepsiburada.net/s/82/222-222/110000024962217.jpg/format:webp',
       price: {
         buyPrice: 6190,
         discount: {
@@ -252,6 +232,36 @@ export const TEST_DATA_PAGINATE = [
         marketPrice: 24,
       },
       title: 'Genaral mobile gm 4 ekran sağlan anakart bozuk',
+    },
+  ],
+  [
+    {
+      brand: 'NOKIA',
+      id: 32314,
+      imageUrl: 'https://productimages.hepsiburada.net/s/10/222-222/9184450019378.jpg/format:webp',
+      price: {
+        buyPrice: 11190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'NOKİA C6-01 CLASSİK SİYAH DOKUNMATİK CEP TELEFONU(TEŞHİR) ORJİNAL ÜRÜN ŞOK FİYAT ÜCRETSİZ KARGO',
+    },
+    {
+      brand: 'LG',
+      id: 44314,
+      imageUrl: 'https://productimages.hepsiburada.net/s/197/222-222/110000168361770.jpg/format:webp',
+      price: {
+        buyPrice: 21190,
+        discount: {
+          amount: 52,
+          type: 'PRICE',
+        },
+        marketPrice: 24,
+      },
+      title: 'Lg K10 LTE 16GB Siyah 2GB Ram Cep Telefonu Sorunsuz İkinci El',
     },
   ],
 ];
