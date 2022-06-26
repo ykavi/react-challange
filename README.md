@@ -17,3 +17,5 @@ yarn jest
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Ek bilgi
+Live olarak https://react-challange.vercel.app/ bu linkten erişilebilir.
