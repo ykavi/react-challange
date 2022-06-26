@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { Text } from '@components';
 import { PRODUCT_LIST, TAB_DATA } from '@mock';
 import { TAB_TYPE } from '@enums';
+import { sortByPrice } from '@helpers';
 import { Container, ItemWrapper } from './style';
 import { useDispatch } from 'react-redux';
 import { setProducts } from '../../redux/actions/main';
@@ -22,6 +23,11 @@ const FilterTab = () => {
     if (type === TAB_TYPE.FILTER) {
       const filteredData = PRODUCT_LIST.filter((item) => item.brand.toLowerCase() === key.toLowerCase());
       dispatch(setProducts(filteredData));
+    }
+    if (type === TAB_TYPE.SORT) {
+      const sortedData = PRODUCT_LIST.sort(sortByPrice);
+      console.log(sortedData);
+      dispatch(setProducts(sortedData));
     }
   };
 

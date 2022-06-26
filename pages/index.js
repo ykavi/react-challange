@@ -1,10 +1,11 @@
 import { Col, Row } from 'react-styled-flexboxgrid';
 import { PageTitle, FilterTab, SelectBox, Text, ProductList, Pagination } from '@components';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setProducts } from '../redux/actions/main';
 import { PRODUCT_LIST } from '@mock';
+import { EXCLUDE_FILTER_KEYS } from '@enums';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -12,10 +13,11 @@ const Home = () => {
   const { filterKey } = router.query;
 
   useEffect(() => {
-    if (filterKey) {
-      const filteredData = PRODUCT_LIST.filter((item) => item.brand?.toLowerCase() === filterKey?.toLowerCase());
-      dispatch(setProducts(filteredData));
-    }
+    if (!filterKey) return;
+    if (EXCLUDE_FILTER_KEYS.includes(filterKey)) return;
+
+    const filteredData = PRODUCT_LIST.filter((item) => item.brand?.toLowerCase() === filterKey?.toLowerCase());
+    dispatch(setProducts(filteredData));
   }, [filterKey]);
 
   return (
