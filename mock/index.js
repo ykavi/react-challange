@@ -36,25 +36,25 @@ export const PRODUCT_LIST = [
     price: { buyPrice: 1, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
   {
-    id: 22349,
+    id: 222349,
     title: 'Samsung Galaxy A53 5G 128 GB (Samsung Türkiye Garantili)',
     brand: 'SAMSUNG',
     price: { buyPrice: 3, marketPrice: 22, discount: { amount: 42, type: 'PERCENT' } },
   },
   {
-    id: 22350,
+    id: 2223510,
     title: 'Samsung Galaxy A53 5G 128GB Siyah',
     brand: 'SAMSUNG',
     price: { buyPrice: 1190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
   {
-    id: 22349,
+    id: 221349,
     title: 'Huawei Mate 10 Lite 64GB 4GB RAM 1 YIL Garantii ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
     brand: 'HUAWEI',
     price: { buyPrice: 1499, marketPrice: 22, discount: { amount: 42, type: 'PERCENT' } },
   },
   {
-    id: 22350,
+    id: 221350,
     title: 'Huawei P Smart 32GB 3GB RAM 1 YIL Garantili ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
     brand: 'HUAWEI',
     price: { buyPrice: 1590.85, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
@@ -72,13 +72,13 @@ export const PRODUCT_LIST = [
     price: { buyPrice: 21190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
   {
-    id: 44314,
+    id: 443214,
     title: 'Xiaomi Redmi Note 8 Pro Kılıf 360 Ön Silikon Arka Sert Mika Şeffaf Tam Koruma Kılıf',
     brand: 'XIAOMI',
     price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
   {
-    id: 94314,
+    id: 943124,
     title: 'Genaral mobile gm 4 ekran sağlan anakart bozuk',
     brand: 'GENERAL MOBILE',
     price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
@@ -86,10 +86,10 @@ export const PRODUCT_LIST = [
 ];
 export const BASKET_PRODUCTS = [
   {
-    id: 22350,
-    title: 'Samsung Galaxy A53 5G 128GB Siyah',
-    brand: 'SAMSUNG',
-    price: { buyPrice: 1190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+    id: 943124,
+    title: 'Genaral mobile gm 4 ekran sağlan anakart bozuk',
+    brand: 'GENERAL MOBILE',
+    price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
   {
     id: 22349,
@@ -98,9 +98,9 @@ export const BASKET_PRODUCTS = [
     price: { buyPrice: 1499, marketPrice: 22, discount: { amount: 42, type: 'PERCENT' } },
   },
   {
-    id: 22350,
-    title: 'Huawei P Smart 32GB 3GB RAM 1 YIL Garantili ve Adınıza Faturalı Outlet Teşhir Cep Telefonu',
-    brand: 'HUAWEI',
-    price: { buyPrice: 1590.85, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
+    id: 443214,
+    title: 'Xiaomi Redmi Note 8 Pro Kılıf 360 Ön Silikon Arka Sert Mika Şeffaf Tam Koruma Kılıf',
+    brand: 'XIAOMI',
+    price: { buyPrice: 6190, marketPrice: 24, discount: { amount: 52, type: 'PRICE' } },
   },
 ];
