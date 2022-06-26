@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <Container hasBorder={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-      <NImage src="https://cdn.dsmcdn.com/ty119/product/media/images/20210524/14/91056373/57025599/1/1_org_zoom.jpg" alt="alt" hasBorder={!isHover} />
+      <NImage src={product?.imageUrl} alt="alt" hasBorder={!isHover} />
       <Text margin="10px" size="small" color="black_v1" ellipsis={2}>
         {product?.title}
       </Text>

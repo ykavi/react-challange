@@ -5,7 +5,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['cdn.dsmcdn.com'], //eklenen cdn domaini kullanılabilir
+    domains: ['productimages.hepsiburada.net'], //eklenen cdn domaini kullanılabilir
   },
 };
 
