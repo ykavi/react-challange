@@ -11,12 +11,15 @@ const SearchBar = () => {
   const [filteredProducts, setFilteredProducts] = useState();
 
   useEffect(() => {
-    const filteredItems = PRODUCT_LIST.filter((item) => item.title.includes(inputValue));
+    console.log(PRODUCT_LIST);
+    const filteredItems = PRODUCT_LIST.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase()));
     setFilteredProducts(filteredItems);
   }, [inputValue]);
 
   useEffect(() => {
-    if (inputValue.length > 2) dispatch(setProducts(filteredProducts));
+    const inputValueLength = inputValue?.length;
+    if (inputValueLength < 2) dispatch(setProducts(PRODUCT_LIST));
+    if (inputValueLength > 2) dispatch(setProducts(filteredProducts));
   }, [filteredProducts]);
 
   const onChangeHandle = (e) => {
